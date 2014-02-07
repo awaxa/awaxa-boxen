@@ -44,4 +44,29 @@ class people::awaxa::puppetlabs {
 
   pl_repo { 'puppetlabs/seteam-vagrant-stack': }
 
+
+  pl_repo { 'puppetlabs/puppetlabs-training-bootstrap': }
+
+  # manually installed https://communities.vmware.com/community/vmtn/automationtools/ovf
+  include virtualbox
+  include vagrant
+
+  file { "/Users/${::boxen_user}/Sites":
+    ensure => directory,
+  }
+
+  package { 'xorriso':
+    ensure => latest,
+  }
+
+  ruby::gem { "gpgme for $globalruby":
+    gem  => 'gpgme',
+    ruby => "$globalruby",
+  }
+
+  ruby::gem { "nokogiri for $globalruby":
+    gem  => 'nokogiri',
+    ruby => "$globalruby",
+  }
+
 }
