@@ -41,6 +41,18 @@ class people::awaxa::puppetlabs {
     version => '>= 0.9.7',
   }
 
+  include imagemagick
+  ruby::gem { "rmagick for $globalruby":
+    gem     => 'rmagick',
+    ruby    => "$globalruby",
+    require => Package['boxen/brews/imagemagick'],
+  }
+
+  ruby::gem { "pdfkit for $globalruby":
+    gem     => 'pdfkit',
+    ruby    => "$globalruby",
+  }
+
 
   pl_repo { 'puppetlabs/seteam-vagrant-stack': }
 
