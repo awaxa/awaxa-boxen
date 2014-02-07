@@ -32,6 +32,13 @@ class people::awaxa::applications {
       ensure => latest,
   }
 
+  homebrew::tap { 'homebrew/binary': }
+
+  package { 'packer':
+    ensure  => latest,
+    require => Homebrew::Tap['homebrew/binary'],
+  }
+
   ruby::gem { "gist for $globalruby":
     gem     => 'gist',
     ruby    => "$globalruby",
