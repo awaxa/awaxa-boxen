@@ -47,6 +47,9 @@ class people::awaxa::vagrant {
   vagrant::box { 'ubuntu-server-12042-x64-vbox4210-nocm/virtualbox':
     source => 'http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-12042-x64-vbox4210-nocm.box',
   }
+  vagrant::box { 'sles-11sp1-x64-vbox4210-nocm/virtualbox':
+    source => 'http://puppet-vagrant-boxes.puppetlabs.com/sles-11sp1-x64-vbox4210-nocm.box',
+  }
 
   vagrant::box { 'fedora-18-x64-vf503-nocm/vmware_fusion':
     source => 'http://puppet-vagrant-boxes.puppetlabs.com/fedora-18-x64-vf503-nocm.box',
