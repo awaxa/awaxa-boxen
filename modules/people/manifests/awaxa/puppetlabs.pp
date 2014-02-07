@@ -6,7 +6,7 @@ class people::awaxa::puppetlabs {
   $src = "${boxen::config::srcdir}"
   $globalruby = $people::awaxa::globalruby
 
-  define pl_repository () {
+  define pl_repo () {
     $src = "${boxen::config::srcdir}"
     $email = 'greg.kitson@puppetlabs.com'
     $remote = split("$title", '/')
@@ -22,9 +22,9 @@ class people::awaxa::puppetlabs {
   }
 
 
-  pl_repository { 'puppetlabs/puppet': }
+  pl_repo { 'puppetlabs/puppet': }
 
-  pl_repository { 'puppetlabs/facter': }
+  pl_repo { 'puppetlabs/facter': }
 
   file { '/usr/local/bin/envpuppet':
     ensure  => link,
@@ -33,7 +33,7 @@ class people::awaxa::puppetlabs {
   }
 
 
-  pl_repository { 'awaxa/courseware-fundamentals': }
+  pl_repo { 'awaxa/courseware-fundamentals': }
 
   ruby::gem { "showoff for $globalruby":
     gem     => 'showoff',
@@ -42,6 +42,6 @@ class people::awaxa::puppetlabs {
   }
 
 
-  pl_repository { 'puppetlabs/seteam-vagrant-stack': }
+  pl_repo { 'puppetlabs/seteam-vagrant-stack': }
 
 }
