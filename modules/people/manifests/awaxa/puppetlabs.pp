@@ -81,4 +81,10 @@ class people::awaxa::puppetlabs {
     ruby => "$globalruby",
   }
 
+
+  ruby::gem { 'puppet-lint':
+    gem  => 'puppet-lint',
+    ruby => "$globalruby",
+  }
+
 }
