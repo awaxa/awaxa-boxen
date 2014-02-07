@@ -21,9 +21,17 @@ class people::awaxa::puppetlabs {
     }
   }
 
+
   pl_repository { 'puppetlabs/puppet': }
 
   pl_repository { 'puppetlabs/facter': }
+
+  file { '/usr/local/bin/envpuppet':
+    ensure  => link,
+    target  => "$src/puppet/ext/envpuppet",
+    require => [ Repository["$src/puppet"], File['/usr/local/bin'] ],
+  }
+
 
   pl_repository { 'awaxa/courseware-fundamentals': }
 
@@ -33,11 +41,6 @@ class people::awaxa::puppetlabs {
     version => '>= 0.9.7',
   }
 
-  file { '/usr/local/bin/envpuppet':
-    ensure  => link,
-    target  => "$src/puppet/ext/envpuppet",
-    require => [ Repository["$src/puppet"], File['/usr/local/bin'] ],
-  }
 
   pl_repository { 'puppetlabs/seteam-vagrant-stack': }
 
