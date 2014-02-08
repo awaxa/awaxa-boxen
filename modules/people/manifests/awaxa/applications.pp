@@ -1,7 +1,5 @@
 class people::awaxa::applications {
 
-  $globalruby = $people::awaxa::globalruby
-
   include caffeine
   include chrome
   include dropbox
@@ -39,10 +37,7 @@ class people::awaxa::applications {
     require => Homebrew::Tap['homebrew/binary'],
   }
 
-  ruby::gem { "gist for ${globalruby}":
-    gem     => 'gist',
-    ruby    => $globalruby,
-  }
+  people::awaxa::globalgem { 'gist': }
 
   python::pip { 'awscli':
     virtualenv => $python::config::global_venv,
