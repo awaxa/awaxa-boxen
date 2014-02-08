@@ -5,7 +5,7 @@ class people::awaxa::dotfiles {
   $home     = "/Users/${::boxen_user}"
   $dotfiles = "${boxen::config::srcdir}/dotfiles"
 
-  repository { "$dotfiles":
+  repository { $dotfiles:
     source => 'awaxa/dotfiles',
   }
 
@@ -20,50 +20,50 @@ class people::awaxa::dotfiles {
     'kien/ctrlp.vim',
   ]: }
 
-  file { "$home/.tmux.conf":
+  file { "${home}/.tmux.conf":
     ensure  => link,
-    target  => "$dotfiles/home/.tmux.conf",
-    require => Repository["$dotfiles"],
+    target  => "${dotfiles}/home/.tmux.conf",
+    require => Repository[$dotfiles],
   }
 
-  file { "$home/.vimrc":
+  file { "${home}/.vimrc":
     ensure  => link,
-    target  => "$dotfiles/home/.vimrc",
-    require => Repository["$dotfiles"],
+    target  => "${dotfiles}/home/.vimrc",
+    require => Repository[$dotfiles],
   }
 
-  file { "$home/.profile":
+  file { "${home}/.profile":
     ensure  => link,
-    target  => "$dotfiles/home/.profile",
-    require => Repository["$dotfiles"],
+    target  => "${dotfiles}/home/.profile",
+    require => Repository[$dotfiles],
   }
 
-  file { "$home/.inputrc":
+  file { "${home}/.inputrc":
     ensure  => link,
-    target  => "$dotfiles/home/.inputrc",
-    require => Repository["$dotfiles"],
+    target  => "${dotfiles}/home/.inputrc",
+    require => Repository[$dotfiles],
   }
 
-  file { "$home/.bash_aliases":
+  file { "${home}/.bash_aliases":
     ensure  => link,
-    target  => "$dotfiles/home/.bash_aliases",
-    require => Repository["$dotfiles"],
+    target  => "${dotfiles}/home/.bash_aliases",
+    require => Repository[$dotfiles],
   }
 
-  file { "$home/.bashrc":
+  file { "${home}/.bashrc":
     ensure  => link,
-    target  => "$dotfiles/home/.bashrc",
-    require => Repository["$dotfiles"],
+    target  => "${dotfiles}/home/.bashrc",
+    require => Repository[$dotfiles],
   }
 
-  file { "$home/.ssh":
+  file { "${home}/.ssh":
     ensure => directory,
   }
 
-  file { "$home/.ssh/config":
+  file { "${home}/.ssh/config":
     ensure  => link,
-    target  => "$dotfiles/home/.ssh/config",
-    require => [ File["$home/.ssh"], Repository["$dotfiles"] ],
+    target  => "${dotfiles}/home/.ssh/config",
+    require => [ File["${home}/.ssh"], Repository[$dotfiles] ],
   }
 
 }

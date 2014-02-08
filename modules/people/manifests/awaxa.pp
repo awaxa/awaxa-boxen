@@ -3,7 +3,7 @@ class people::awaxa {
   $globalruby = '2.0.0'
 
   class { 'ruby::global':
-    version => "$globalruby"
+    version => $globalruby,
   }
 
   include people::awaxa::applications

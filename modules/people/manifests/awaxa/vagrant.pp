@@ -18,7 +18,7 @@ class people::awaxa::vagrant {
   }
 
   vagrant::box { 'digital_ocean/digital_ocean':
-    source => 'https://github.com/smdahlen/vagrant-digitalocean/raw/master/box/digital_ocean.box',
+    source  => 'https://github.com/smdahlen/vagrant-digitalocean/raw/master/box/digital_ocean.box',
     require => Vagrant::Plugin['vagrant-digitalocean'],
   }
 

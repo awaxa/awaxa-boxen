@@ -39,9 +39,9 @@ class people::awaxa::applications {
     require => Homebrew::Tap['homebrew/binary'],
   }
 
-  ruby::gem { "gist for $globalruby":
+  ruby::gem { "gist for ${globalruby}":
     gem     => 'gist',
-    ruby    => "$globalruby",
+    ruby    => $globalruby,
   }
 
   python::pip { 'awscli':
@@ -50,7 +50,7 @@ class people::awaxa::applications {
 
   package {
     'GoogleVoiceAndVideoSetup':
-      source => 'http://dl.google.com/googletalk/googletalkplugin/GoogleVoiceAndVideoSetup.dmg',
+      source   => 'http://dl.google.com/googletalk/googletalkplugin/GoogleVoiceAndVideoSetup.dmg',
       provider => pkgdmg,
   }
 }
