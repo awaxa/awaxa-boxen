@@ -33,6 +33,10 @@ class people::awaxa::gitconfig {
   }
 
   git::config::global { 'alias.bv':
+    value => 'branch -vv',
+  }
+
+  git::config::global { 'alias.bvv':
     value => 'branch -avv',
   }
 
