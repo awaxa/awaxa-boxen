@@ -26,6 +26,7 @@ class people::awaxa::applications {
     'pstree',
     'apg',
     'tmux',
+    'mutt',
     ]:
       ensure => latest,
   }
