@@ -3,9 +3,13 @@ class people::awaxa::vagrant {
   $plugins = [ 'vagrant-vmware-fusion',
                'vagrant-aws',
                'vagrant-digitalocean',
-               #'oscar',
                'vagrant-windows',
                'vagrant-multiprovider-snap',
+               #'oscar',
+               'vagrant-hosts',
+               'vagrant-pe_build',
+               'vagrant-auto_network',
+               'vagrant-config_builder',
              ]
 
   include vagrant
