@@ -54,6 +54,11 @@ GITHUBTARBALL
     java (1.2.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-nginx
+  specs:
+    nginx (1.4.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-onepassword
   specs:
     onepassword (1.1.0)
@@ -172,6 +177,7 @@ DEPENDENCIES
   inifile (= 1.0.0)
   iterm2 (= 1.0.6)
   java (= 1.2.0)
+  nginx (= 1.4.2)
   onepassword (= 1.1.0)
   openssl (= 1.0.0)
   osx (= 2.2.2)
