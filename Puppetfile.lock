@@ -36,7 +36,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.5.1)
+    homebrew (1.6.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-imagemagick
@@ -167,7 +167,7 @@ DEPENDENCIES
   git (= 1.2.5)
   gpgtools (= 0.0.4)
   hipchat (= 1.1.0)
-  homebrew (= 1.5.1)
+  homebrew (= 1.6.1)
   imagemagick (= 1.2.1)
   inifile (= 1.0.0)
   iterm2 (= 1.0.6)
