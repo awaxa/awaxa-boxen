@@ -54,6 +54,18 @@ class people::awaxa::vagrant {
   vagrant::box { 'sles-11sp1-x64-vbox4210-nocm/virtualbox':
     source => 'http://puppet-vagrant-boxes.puppetlabs.com/sles-11sp1-x64-vbox4210-nocm.box',
   }
+  vagrant::box { 'centos-510-x64-vbox436-nocm/virtualbox':
+    source => 'https://s3.amazonaws.com/puppet-vagrant-boxes/centos-510-x64-virtualbox-nocm.box'
+  }
+  vagrant::box { 'centos-65-x64-vbox436-nocm/virtualbox':
+    source => 'https://s3.amazonaws.com/puppet-vagrant-boxes/centos-65-x64-virtualbox-nocm.box'
+  }
+  vagrant::box { 'debian-74-x64-vbox436-nocm/virtualbox':
+    source => 'https://s3.amazonaws.com/puppet-vagrant-boxes/debian-74-x86_64-virtualbox-nocm.box'
+  }
+  vagrant::box { 'ubuntu-server-1204-x64-vbox436-nocm/virtualbox':
+    source => 'https://s3.amazonaws.com/puppet-vagrant-boxes/ubuntu-1204-x86_64-virtualbox-nocm.box'
+  }
 
   vagrant::box { 'fedora-18-x64-vf503-nocm/vmware_fusion':
     source => 'http://puppet-vagrant-boxes.puppetlabs.com/fedora-18-x64-vf503-nocm.box',
