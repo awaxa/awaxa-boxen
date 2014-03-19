@@ -6,7 +6,6 @@ class people::awaxa::preferences {
 
   include osx::global::disable_remote_control_ir_receiver
 
-  include osx::dock::clear_dock
   include osx::dock::autohide
   include osx::dock::disable
 
