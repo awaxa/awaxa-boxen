@@ -5,6 +5,8 @@ class people::awaxa::applications {
   include dropbox
   #include gpgtools
   include iterm2::dev
+  include iterm2::colors::solarized_light
+  include iterm2::colors::solarized_dark
   include onepassword
   include java
   include python
