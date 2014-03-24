@@ -9,6 +9,10 @@ class people::awaxa::dotfiles {
     source => 'awaxa/dotfiles',
   }
 
+  repository { "${home}/.oh-my-zsh":
+    source => 'robbyrussell/oh-my-zsh',
+  }
+
   vim::bundle { [
     'tpope/vim-sensible',
     'godlygeek/tabular',
