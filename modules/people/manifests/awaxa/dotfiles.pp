@@ -24,6 +24,7 @@ class people::awaxa::dotfiles {
     'edkolev/tmuxline.vim',
     'kien/ctrlp.vim',
     'jnurmine/Zenburn',
+    'altercation/vim-colors-solarized',
   ]: }
 
   file { "${home}/.tmux.conf":
