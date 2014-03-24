@@ -21,6 +21,7 @@ class people::awaxa::dotfiles {
     'scrooloose/nerdtree',
     'Shougo/neocomplcache.vim',
     'bling/vim-airline',
+    'edkolev/tmuxline.vim',
     'kien/ctrlp.vim',
     'jnurmine/Zenburn',
   ]: }
