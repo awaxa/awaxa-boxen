@@ -8,6 +8,10 @@ class people::awaxa::gitconfig {
     value => 'greg.kitson@gmail.com',
   }
 
+  git::config::global { 'core.editor':
+    value => 'vim',
+  }
+
   git::config::global { 'color.ui':
     value => 'auto',
   }
