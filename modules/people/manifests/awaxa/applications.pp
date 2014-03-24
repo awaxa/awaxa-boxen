@@ -19,6 +19,7 @@ class people::awaxa::applications {
   include virtualbox
   include vlc
   include vmware_fusion
+  include zsh
 
   package { [
     'htop-osx',

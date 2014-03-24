@@ -149,6 +149,11 @@ GITHUBTARBALL
     xquartz (1.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-zsh
+  specs:
+    zsh (1.0.0)
+
+GITHUBTARBALL
   remote: gaahrdner/puppet-gpgtools
   specs:
     gpgtools (0.0.4)
@@ -197,4 +202,5 @@ DEPENDENCIES
   vlc (= 1.0.5)
   vmware_fusion (= 1.1.0)
   xquartz (= 1.1.0)
+  zsh (= 1.0.0)
 
