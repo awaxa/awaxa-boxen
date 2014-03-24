@@ -18,6 +18,7 @@ class people::awaxa::dotfiles {
     'Shougo/neocomplcache.vim',
     'bling/vim-airline',
     'kien/ctrlp.vim',
+    'jnurmine/Zenburn',
   ]: }
 
   file { "${home}/.tmux.conf":
