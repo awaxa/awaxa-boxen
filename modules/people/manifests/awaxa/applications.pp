@@ -7,6 +7,7 @@ class people::awaxa::applications {
   include iterm2::dev
   #include iterm2::colors::solarized_light
   #include iterm2::colors::solarized_dark
+  include people::awaxa::nginx
   include onepassword
   include java
   include python
