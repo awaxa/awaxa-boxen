@@ -10,6 +10,7 @@ class people::awaxa::vagrant {
                'vagrant-pe_build',
                'vagrant-auto_network',
                'vagrant-config_builder',
+               'vagrant-cachier',
              ]
 
   include vagrant
