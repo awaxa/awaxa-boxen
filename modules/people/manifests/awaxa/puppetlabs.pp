@@ -11,12 +11,6 @@ class people::awaxa::puppetlabs {
 
   people::awaxa::puppetlabs::repo { 'puppetlabs/facter': }
 
-  file { '/usr/local/bin/envpuppet':
-    ensure  => link,
-    target  => "${src}/puppet/ext/envpuppet",
-    require => [ Repository["${src}/puppet"], File['/usr/local/bin'] ],
-  }
-
   include people::awaxa::puppetlabs::courseware
 
   people::awaxa::puppetlabs::repo { 'puppetlabs/seteam-vagrant-stack': }
