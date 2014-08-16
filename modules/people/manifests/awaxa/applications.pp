@@ -26,6 +26,7 @@ class people::awaxa::applications {
     'dos2unix',
     'gist',
     'htop-osx',
+    'irssi',
     'pstree',
     'tmux',
     'tree',
