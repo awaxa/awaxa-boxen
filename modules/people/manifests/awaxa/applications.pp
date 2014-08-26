@@ -12,8 +12,6 @@ class people::awaxa::applications {
   include '::iterm2::dev'
   include '::java'
   include '::onepassword'
-  include '::mou'
-  include '::mou::themes'
   include '::python'
   include '::python::virtualenvwrapper'
   include '::sizeup'
