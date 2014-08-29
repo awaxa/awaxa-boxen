@@ -12,6 +12,7 @@ class people::awaxa::applications {
   include '::iterm2::dev'
   include '::java'
   include '::onepassword'
+  include '::powerline'
   include '::python'
   include '::python::virtualenvwrapper'
   include '::sizeup'
