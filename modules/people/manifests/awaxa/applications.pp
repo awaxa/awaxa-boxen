@@ -11,6 +11,7 @@ class people::awaxa::applications {
   include '::iterm2::colors::solarized_light'
   include '::iterm2::dev'
   include '::java'
+  include '::nimbus'
   include '::onepassword'
   include '::powerline'
   include '::prince'
