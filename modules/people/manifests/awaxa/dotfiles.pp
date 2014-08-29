@@ -1,5 +1,5 @@
 class people::awaxa::dotfiles {
-  repository { "${::boxen::config::srcdir}/dotfiles":
+  repository { "${::boxen_srcdir}/dotfiles":
     ensure => 'present',
     source => "${::boxen_user}/dotfiles",
   }

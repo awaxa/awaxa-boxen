@@ -1,5 +1,5 @@
 define people::awaxa::linked_dotfile (
-  $src = "${::boxen::config::srcdir}/dotfiles",
+  $src = "${::boxen_srcdir}/dotfiles",
 ){
   file { "/Users/${::boxen_user}/${title}":
     ensure  => 'link',
