@@ -29,6 +29,7 @@ class people::awaxa::applications {
     'htop-osx',
     'irssi',
     'pstree',
+    'python3',
     'tmux',
     'tree',
     'vim',
