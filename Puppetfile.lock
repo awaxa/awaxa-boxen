@@ -26,7 +26,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-chrome
   specs:
-    chrome (1.1.2)
+    chrome (1.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
@@ -206,7 +206,7 @@ GITHUBTARBALL
 DEPENDENCIES
   boxen (= 3.6.2)
   caffeine (= 1.0.0)
-  chrome (= 1.1.2)
+  chrome (= 1.2.0)
   dnsmasq (= 1.0.1)
   dropbox (= 1.4.0)
   foreman (= 1.2.0)

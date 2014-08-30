@@ -60,7 +60,7 @@ github "xquartz",     "1.1.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 github "caffeine",          "1.0.0"
-github "chrome",            "1.1.2"
+github "chrome",            "1.2.0"
 github "dropbox",           "1.4.0"
 github "heroku",            "2.1.1"
 github "hipchat",           "1.1.3"
