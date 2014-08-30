@@ -12,11 +12,6 @@ class people::awaxa::vagrant {
   vagrant::plugin { 'vagrant-auto_network': }
   vagrant::plugin { 'vagrant-config_builder': }
 
-  vagrant::plugin { 'vagrant-aws': }
-  vagrant::box { 'dummy/aws':
-    source  => 'https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box',
-    require => Vagrant::Plugin['vagrant-aws'],
-  }
   vagrant::plugin { 'vagrant-digitalocean': }
   vagrant::box { 'digital_ocean/digital_ocean':
     source  => 'https://github.com/smdahlen/vagrant-digitalocean/raw/master/box/digital_ocean.box',
