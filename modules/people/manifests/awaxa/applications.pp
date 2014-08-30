@@ -29,14 +29,19 @@ class people::awaxa::applications {
     'htop-osx',
     'irssi',
     'pstree',
-    'python3',
     'tmux',
     'tree',
     'vim',
     'watch',
-    #'wget',
     ]:
       ensure => 'latest',
+  }
+
+  package { [
+    'python3',
+    'wget',
+    ]:
+    ensure => 'present',
   }
 
   homebrew::tap { 'homebrew/binary':
