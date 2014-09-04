@@ -1,6 +1,6 @@
 class people::awaxa::dotfiles {
   repository { "${::boxen_srcdir}/dotfiles":
-    ensure => 'present',
+    ensure => present,
     source => "${::boxen_user}/dotfiles",
   }
   repository { "/Users/${::boxen_user}/.oh-my-zsh":
@@ -10,7 +10,7 @@ class people::awaxa::dotfiles {
   people::awaxa::linked_dotfile { '.vimrc': }
   file { [ "/Users/${::boxen_user}/.vim",
            "/Users/${::boxen_user}/.vim/bundle", ]:
-    ensure => 'directory',
+    ensure => directory,
   }
   repository { "/Users/${::boxen_user}/.vim/bundle/Vundle.vim":
     ensure  => 'master',

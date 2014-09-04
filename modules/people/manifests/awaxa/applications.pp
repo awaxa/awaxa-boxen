@@ -1,25 +1,25 @@
 class people::awaxa::applications {
 
-  include '::chrome'
-  include '::dropbox'
-  include '::foreman'
-  include '::heroku'
-  include '::hipchat'
-  include '::iterm2::colors::arthur'
-  include '::iterm2::colors::solarized_dark'
-  include '::iterm2::colors::solarized_light'
-  include '::iterm2::dev'
-  include '::java'
-  include '::nimbus'
-  include '::onepassword'
-  include '::powerline'
-  include '::prince'
-  include '::python'
-  include '::python::virtualenvwrapper'
-  include '::sizeup'
-  include '::tunnelblick::beta'
-  include '::vlc'
-  include '::zsh'
+  include chrome
+  include dropbox
+  include foreman
+  include heroku
+  include hipchat
+  include iterm2::colors::arthur
+  include iterm2::colors::solarized_dark
+  include iterm2::colors::solarized_light
+  include iterm2::dev
+  include java
+  include nimbus
+  include onepassword
+  include powerline
+  include prince
+  include python
+  include python::virtualenvwrapper
+  include sizeup
+  include tunnelblick::beta
+  include vlc
+  include zsh
 
   package { [
     'apg',
@@ -33,38 +33,38 @@ class people::awaxa::applications {
     'vim',
     'watch',
     ]:
-      ensure => 'latest',
+      ensure => latest,
   }
 
   package { [
     'python3',
     'wget',
     ]:
-    ensure => 'present',
+    ensure => present,
   }
 
   homebrew::tap { 'homebrew/binary':
-    ensure => 'present',
+    ensure => present,
   }
 
   package { 'packer':
-    ensure  => 'latest',
+    ensure  => latest,
     require => Homebrew::Tap['homebrew/binary'],
   }
 
   python::mkvirtualenv { 'aws':
-    ensure => 'present',
+    ensure => present,
     before => Python::Pip[ 'awscli' ],
   }
   python::pip { 'awscli':
-    ensure     => 'present',
+    ensure     => present,
     virtualenv => "${::python::config::venv_home}/aws",
   }
 
   class { 'nodejs::global': version => 'v0.10' }
 
   package { 'GoogleVoiceAndVideoSetup':
-    ensure   => 'present',
+    ensure   => present,
     source   => 'http://dl.google.com/googletalk/googletalkplugin/GoogleVoiceAndVideoSetup.dmg',
     provider => 'pkgdmg',
   }
