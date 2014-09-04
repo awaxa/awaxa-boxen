@@ -1,6 +1,5 @@
 class people::awaxa::applications {
 
-  include '::caffeine'
   include '::chrome'
   include '::dropbox'
   include '::foreman'
