@@ -1,7 +1,7 @@
 class people::awaxa::vagrant {
   include virtualbox
   include vmware_fusion
-  class { '::vagrant': version => '1.6.3' }
+  class { '::vagrant': version => '1.6.5' }
 
   #vagrant::plugin { 'vagrant-vmware-fusion': }
   vagrant::plugin { 'vagrant-multiprovider-snap': }
