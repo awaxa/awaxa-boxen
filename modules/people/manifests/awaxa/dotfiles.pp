@@ -25,7 +25,6 @@ class people::awaxa::dotfiles {
   people::awaxa::linked_dotfile { '.aliases': }
   people::awaxa::linked_dotfile { '.zshrc': }
   people::awaxa::linked_dotfile { '.bashrc': }
-  people::awaxa::linked_dotfile { '.bash_aliases': }
   file { "/Users/${::boxen_user}/.ssh": ensure => 'directory' }
   people::awaxa::linked_dotfile { '.ssh/config': }
   people::awaxa::linked_dotfile { '.vagrant.d/Vagrantfile': }
