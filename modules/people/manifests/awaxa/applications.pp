@@ -12,7 +12,6 @@ class people::awaxa::applications {
   include java
   include nimbus
   include onepassword
-  include powerline
   include prince
   include python
   include python::virtualenvwrapper
