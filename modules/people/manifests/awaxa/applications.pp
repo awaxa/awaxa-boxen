@@ -46,7 +46,6 @@ class people::awaxa::applications {
   homebrew::tap { 'homebrew/binary':
     ensure => present,
   }
-
   package { 'packer':
     ensure  => latest,
     require => Homebrew::Tap['homebrew/binary'],
