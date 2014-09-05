@@ -35,7 +35,7 @@ class people::awaxa::preferences {
     ensure => directory,
   }
   boxen::osx_defaults { 'Set Screenshot Directory':
-    ensure => present,
+    ensure  => present,
     user    => $::boxen_user,
     key     => 'location',
     domain  => 'com.apple.screencapture',
