@@ -8,7 +8,7 @@ class people::awaxa::applications {
   include iterm2::colors::arthur
   include iterm2::colors::solarized_dark
   include iterm2::colors::solarized_light
-  include iterm2::dev
+  include iterm2::stable
   include java
   include nimbus
   include onepassword
