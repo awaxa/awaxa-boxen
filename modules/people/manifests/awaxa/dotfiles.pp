@@ -1,7 +1,7 @@
 class people::awaxa::dotfiles {
   repository { "${::boxen_srcdir}/dotfiles":
     ensure => present,
-    source => "${::boxen_user}/dotfiles",
+    source => "${::github_login}/dotfiles",
   }
   repository { "/Users/${::boxen_user}/.oh-my-zsh":
     ensure => 'master',
