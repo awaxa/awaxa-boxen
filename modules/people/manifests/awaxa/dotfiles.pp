@@ -19,6 +19,7 @@ class people::awaxa::dotfiles {
   }
   people::awaxa::linked_dotfile { '.tmux.conf': }
   people::awaxa::linked_dotfile { '.profile': }
+  people::awaxa::linked_dotfile { '.rc.d': }
   people::awaxa::linked_dotfile { '.gitconfig': }
   people::awaxa::linked_dotfile { '.inputrc': }
   people::awaxa::linked_dotfile { '.aliases': }

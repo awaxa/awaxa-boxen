@@ -22,6 +22,8 @@ class people::awaxa::applications {
 
   package { [
     'apg',
+    'bash',
+    'dash',
     'dos2unix',
     'gist',
     'htop-osx',
