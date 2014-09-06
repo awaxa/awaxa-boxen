@@ -13,7 +13,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: awaxa/puppet-powerline
   specs:
-    powerline (1.1.0)
+    powerline (1.1.1)
 
 GITHUBTARBALL
   remote: awaxa/puppet-prince
@@ -225,7 +225,7 @@ DEPENDENCIES
   osx (= 2.7.1)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
-  powerline (= 1.1.0)
+  powerline (= 1.1.1)
   prince (= 1.0.0)
   property_list_key (= 0.2.1)
   python (= 1.3.0)

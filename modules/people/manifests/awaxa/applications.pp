@@ -12,7 +12,6 @@ class people::awaxa::applications {
   include java
   include nimbus
   include onepassword
-  include powerline
   include prince
   include python
   include python::virtualenvwrapper
@@ -20,6 +19,10 @@ class people::awaxa::applications {
   include tunnelblick::beta
   include vlc
   include zsh
+
+  class { 'powerline':
+    manage_font_library_dir => true,
+  }
 
   package { [
     'apg',
