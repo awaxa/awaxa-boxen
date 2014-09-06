@@ -65,8 +65,6 @@ class people::awaxa::applications {
     virtualenv => "${::python::config::venv_home}/aws",
   }
 
-  class { 'nodejs::global': version => 'v0.10' }
-
   package { 'GoogleVoiceAndVideoSetup':
     ensure   => present,
     source   => 'http://dl.google.com/googletalk/googletalkplugin/GoogleVoiceAndVideoSetup.dmg',
