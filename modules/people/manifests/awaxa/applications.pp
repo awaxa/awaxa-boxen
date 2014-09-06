@@ -31,6 +31,7 @@ class people::awaxa::applications {
     'gist',
     'htop-osx',
     'pstree',
+    'reattach-to-user-namespace',
     'tmux',
     'tree',
     'vim',
