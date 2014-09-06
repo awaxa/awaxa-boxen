@@ -60,7 +60,7 @@ github "xquartz",     "1.1.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 github "chrome",            "1.2.0"
-github "dropbox",           "1.4.0"
+github "googledrive",       "1.0.2"
 github "heroku",            "2.1.1"
 github "hipchat",           "1.1.3"
 mod "iterm2", :git => "https://github.com/awaxa/puppet-iterm2.git", :ref => "81195e3"

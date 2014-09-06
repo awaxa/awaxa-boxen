@@ -1,8 +1,8 @@
 class people::awaxa::applications {
 
   include chrome
-  include dropbox
   include foreman
+  include googledrive
   include heroku
   include hipchat
   include iterm2::colors::arthur
