@@ -14,6 +14,7 @@ class people::awaxa::applications {
   include onepassword
   include prince
   include python
+  include python::virtualenvwrapper
   include sizeup
   include tunnelblick::beta
   include vlc
