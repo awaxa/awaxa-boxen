@@ -31,7 +31,6 @@ class people::awaxa::applications {
     'dos2unix',
     'gist',
     'htop-osx',
-    'irssi',
     'pstree',
     'tmux',
     'tree',
@@ -42,6 +41,7 @@ class people::awaxa::applications {
   }
 
   package { [
+    'irssi',
     'python3',
     'wget',
     ]:
