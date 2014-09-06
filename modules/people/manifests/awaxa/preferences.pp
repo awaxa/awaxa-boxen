@@ -31,16 +31,12 @@ class people::awaxa::preferences {
     value  => '1',
   }
 
-  file { "/Users/${::boxen_user}/Screenshots":
-    ensure => directory,
-  }
   boxen::osx_defaults { 'Set Screenshot Directory':
-    ensure  => present,
-    user    => $::boxen_user,
-    key     => 'location',
-    domain  => 'com.apple.screencapture',
-    value   => "/Users/${::boxen_user}/Screenshots",
-    require => File["/Users/${::boxen_user}/Screenshots"],
+    ensure => present,
+    user   => $::boxen_user,
+    key    => 'location',
+    domain => 'com.apple.screencapture',
+    value  => "/Users/${::boxen_user}/Google Drive/Screenshots",
   }
 
 }
