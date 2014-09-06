@@ -38,7 +38,7 @@ class people::awaxa::applications {
     'vim',
     'watch',
     ]:
-      ensure => latest,
+    ensure => latest,
   }
 
   package { [
