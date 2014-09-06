@@ -40,6 +40,7 @@ class people::awaxa::applications {
   }
 
   package { [
+    'awscli',
     'irssi',
     'python3',
     'wget',
