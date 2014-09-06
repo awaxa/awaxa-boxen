@@ -8,15 +8,6 @@ class people::awaxa::dotfiles {
     source => 'robbyrussell/oh-my-zsh',
   }
   people::awaxa::linked_dotfile { '.vimrc': }
-  file { [ "/Users/${::boxen_user}/.vim",
-           "/Users/${::boxen_user}/.vim/bundle", ]:
-    ensure => directory,
-  }
-  repository { "/Users/${::boxen_user}/.vim/bundle/Vundle.vim":
-    ensure  => 'master',
-    source  => 'gmarik/Vundle.vim',
-    require => File["/Users/${::boxen_user}/.vim/bundle"],
-  }
   people::awaxa::linked_dotfile { '.tmux.conf': }
   people::awaxa::linked_dotfile { '.profile': }
   people::awaxa::linked_dotfile { '.rc.d': }
