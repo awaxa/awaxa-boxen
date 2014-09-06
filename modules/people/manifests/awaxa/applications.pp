@@ -14,7 +14,6 @@ class people::awaxa::applications {
   include onepassword
   include prince
   include python
-  include python::virtualenvwrapper
   include sizeup
   include tunnelblick::beta
   include vlc
@@ -54,15 +53,6 @@ class people::awaxa::applications {
   package { 'packer':
     ensure  => latest,
     require => Homebrew::Tap['homebrew/binary'],
-  }
-
-  python::mkvirtualenv { 'aws':
-    ensure => present,
-    before => Python::Pip[ 'awscli' ],
-  }
-  python::pip { 'awscli':
-    ensure     => present,
-    virtualenv => "${::python::config::venv_home}/aws",
   }
 
   package { 'GoogleVoiceAndVideoSetup':
