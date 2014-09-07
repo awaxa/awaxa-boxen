@@ -9,7 +9,12 @@ security unlock-keychain -p vagrant
 BOOTSTRAP
 
 Vagrant.configure('2') do |config|
-  config.vm.box = 'mavericks'
+  config.vm.define 'mavericks' do |mavericks|
+    mavericks.vm.box = 'mavericks'
+  end
+  config.vm.define 'mountainlion' do |mountainlion|
+    mountainlion.vm.box = 'mountainlion'
+  end
   config.vm.synced_folder '~/boxen-vagrant', '/Users/vagrant/boxen-vagrant'
   config.vm.provision 'shell', inline: $bootstrap, privileged: false
 end
