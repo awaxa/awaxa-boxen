@@ -1,7 +1,15 @@
 class people::awaxa {
-  include people::awaxa::applications
+  include people::awaxa::base
   include people::awaxa::dotfiles
-  include people::awaxa::preferences
   include people::awaxa::puppet
-  include people::awaxa::vagrant
+  case $::hostname {
+    'ambp': {
+      include people::awaxa::applications
+      include people::awaxa::preferences
+      include people::awaxa::vagrant
+    }
+    'mini': {
+      include people::awaxa::mini
+    }
+  }
 }
