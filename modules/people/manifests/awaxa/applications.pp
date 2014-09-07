@@ -27,6 +27,7 @@ class people::awaxa::applications {
   package { [
     'apg',
     'bash',
+    'bazaar',
     'dash',
     'dos2unix',
     'gist',
