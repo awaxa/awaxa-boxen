@@ -45,6 +45,7 @@ class people::awaxa::applications {
   package { [
     'awscli',
     'irssi',
+    'mercurial',
     'python3',
     'wget',
     ]:
