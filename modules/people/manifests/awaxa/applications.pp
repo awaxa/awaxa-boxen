@@ -47,6 +47,7 @@ class people::awaxa::applications {
     'irssi',
     'mercurial',
     'python3',
+    'rdesktop',
     'wget',
     ]:
     ensure => present,
