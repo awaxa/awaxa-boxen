@@ -46,6 +46,7 @@ class people::awaxa::applications {
     'awscli',
     'irssi',
     'mercurial',
+    'nmap',
     'python3',
     'rdesktop',
     'wget',
