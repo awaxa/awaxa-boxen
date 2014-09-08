@@ -38,4 +38,12 @@ class people::awaxa::base {
   homebrew::tap { 'homebrew/binary':
     ensure => present,
   }
+
+  homebrew::tap { 'peco/peco':
+    ensure => present,
+  }
+  package { 'peco':
+    ensure  => 'latest',
+    require => Homebrew::Tap['peco/peco'],
+  }
 }
