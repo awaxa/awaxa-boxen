@@ -74,7 +74,7 @@ github "property_list_key", "0.2.1", :repo => "glarizza/puppet-property_list_key
 github "python",            "1.3.0"
 github "sizeup",            "1.0.0"
 github "tunnelblick",       "1.0.6"
-github "vagrant",           "3.1.1"
+github "vagrant",           "3.2.0"
 github "virtualbox",        "1.0.12"
 github "vlc",               "1.1.0"
 github "vmware_fusion",     "1.1.0"
