@@ -12,7 +12,7 @@ Vagrant.configure('2') do |config|
   config.vm.define 'mavericks' do |mavericks|
     mavericks.vm.box = 'mavericks'
   end
-  config.vm.define 'mountainlion' do |mountainlion|
+  config.vm.define 'mountainlion', autostart: false do |mountainlion|
     mountainlion.vm.box = 'mountainlion'
   end
   config.vm.synced_folder '~/boxen-vagrant', '/Users/vagrant/boxen-vagrant'
