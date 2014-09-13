@@ -43,7 +43,7 @@ class people::awaxa::base {
     ensure => present,
   }
   package { 'peco':
-    ensure  => 'latest',
+    ensure  => latest,
     require => Homebrew::Tap['peco/peco'],
   }
 }
