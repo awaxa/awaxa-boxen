@@ -86,6 +86,11 @@ GITHUBTARBALL
     java (1.7.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-kindle
+  specs:
+    kindle (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.3)
@@ -216,6 +221,7 @@ DEPENDENCIES
   inifile (= 1.1.1)
   iterm2 (>= 0)
   java (= 1.7.0)
+  kindle (= 1.0.1)
   module_data (= 0.0.3)
   nginx (= 1.4.3)
   nimbus (= 1.0.0)
