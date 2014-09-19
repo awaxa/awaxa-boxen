@@ -9,7 +9,6 @@ class people::awaxa::applications {
   include iterm2::colors::solarized_dark
   include iterm2::colors::solarized_light
   include iterm2::stable
-  include kindle
   include nimbus
   include onepassword
   include prince
