@@ -8,7 +8,7 @@ GIT
 GITHUBTARBALL
   remote: awaxa/puppet-nimbus
   specs:
-    nimbus (1.0.0)
+    nimbus (1.0.1)
 
 GITHUBTARBALL
   remote: awaxa/puppet-powerline
@@ -218,7 +218,7 @@ DEPENDENCIES
   java (= 1.7.0)
   module_data (= 0.0.3)
   nginx (= 1.4.3)
-  nimbus (= 1.0.0)
+  nimbus (= 1.0.1)
   nodejs (= 3.8.1)
   onepassword (= 1.1.2)
   openssl (= 1.0.0)
