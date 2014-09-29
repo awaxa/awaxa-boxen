@@ -46,4 +46,14 @@ class people::awaxa::base {
     ensure  => latest,
     require => Homebrew::Tap['peco/peco'],
   }
+
+  file { [
+    '/usr/local',
+    '/usr/local/bin',
+  ]:
+    ensure => directory,
+    mode   => '0755',
+    owner  => $::boxen_user,
+    group  => 'admin',
+  }
 }
