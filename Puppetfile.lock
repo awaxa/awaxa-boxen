@@ -148,7 +148,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-tunnelblick
   specs:
-    tunnelblick (1.0.6)
+    tunnelblick (1.0.7)
 
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
@@ -234,7 +234,7 @@ DEPENDENCIES
   sizeup (= 1.0.0)
   stdlib (= 4.2.1)
   sudo (= 1.0.0)
-  tunnelblick (= 1.0.6)
+  tunnelblick (= 1.0.7)
   vagrant (= 3.2.0)
   virtualbox (= 1.0.12)
   vlc (= 1.1.0)
