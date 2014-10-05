@@ -1,4 +1,5 @@
 class people::awaxa {
+  include people::awaxa::android
   include people::awaxa::applications
   include people::awaxa::base
   include people::awaxa::dotfiles

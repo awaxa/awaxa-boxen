@@ -59,6 +59,7 @@ github "xquartz",     "1.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+github "android",           "1.3.0"
 github "chrome",            "1.2.0"
 github "googledrive",       "1.0.2"
 github "heroku",            "2.1.1"
