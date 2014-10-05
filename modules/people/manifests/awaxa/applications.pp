@@ -2,6 +2,7 @@ class people::awaxa::applications {
 
   include chrome
   include foreman
+  include gimp
   include googledrive
   include heroku
   include hipchat
