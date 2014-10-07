@@ -8,6 +8,7 @@ class people::awaxa::base {
   package { [
     'apg',
     'bash',
+    'bats',
     'bazaar',
     'dash',
     'dos2unix',
