@@ -3,6 +3,7 @@ class people::awaxa {
   include people::awaxa::applications
   include people::awaxa::base
   include people::awaxa::dotfiles
+  include people::awaxa::nodejs
   include people::awaxa::preferences
   include people::awaxa::puppet
   include people::awaxa::trainingvms
