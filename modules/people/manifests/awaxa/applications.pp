@@ -7,8 +7,10 @@ class people::awaxa::applications {
   include heroku
   include hipchat
   include iterm2::colors::arthur
+  include iterm2::colors::saturn
   include iterm2::colors::solarized_dark
   include iterm2::colors::solarized_light
+  include iterm2::colors::zenburn
   include iterm2::stable
   include nimbus
   include onepassword
