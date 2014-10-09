@@ -57,4 +57,12 @@ class people::awaxa::base {
     owner  => $::boxen_user,
     group  => 'admin',
   }
+
+  sudoers { $::boxen_user:
+    ensure   => present,
+    type     => 'user_spec',
+    users    => $::boxen_user,
+    hosts    => 'ALL',
+    commands => '(ALL) NOPASSWD : ALL',
+  }
 }
