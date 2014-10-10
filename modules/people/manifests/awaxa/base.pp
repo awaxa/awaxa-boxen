@@ -58,14 +58,6 @@ class people::awaxa::base {
     group  => 'admin',
   }
 
-  file { '/usr/local/bin/battinfo':
-    ensure => file,
-    mode   => '0755',
-    owner  => $::boxen_user,
-    group  => 'admin',
-    source => 'puppet:///modules/people/battinfo.rb',
-  }
-
   file { "${boxen::config::srcdir}/awaxa-boxen":
     ensure => link,
     target => $boxen::config::repodir
