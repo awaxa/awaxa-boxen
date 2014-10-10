@@ -21,4 +21,5 @@ class people::awaxa::dotfiles {
   people::awaxa::linked_dotfile { '.ssh/config': }
   people::awaxa::linked_dotfile { '.irssi': }
   people::awaxa::linked_dotfile { '.warprc': }
+  people::awaxa::linked_dotfile { 'bin': }
 }
