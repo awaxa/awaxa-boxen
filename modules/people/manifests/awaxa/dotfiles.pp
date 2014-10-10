@@ -9,6 +9,7 @@ class people::awaxa::dotfiles {
   }
   people::awaxa::linked_dotfile { '.vimrc': }
   people::awaxa::linked_dotfile { '.tmux.conf': }
+  people::awaxa::linked_dotfile { '.tmuxline.conf': }
   people::awaxa::linked_dotfile { '.profile': }
   people::awaxa::linked_dotfile { '.rc.d': }
   people::awaxa::linked_dotfile { '.gitconfig': }
