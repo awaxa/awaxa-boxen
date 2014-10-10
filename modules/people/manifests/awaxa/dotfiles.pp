@@ -20,4 +20,5 @@ class people::awaxa::dotfiles {
   file { "/Users/${::boxen_user}/.ssh": ensure => 'directory' }
   people::awaxa::linked_dotfile { '.ssh/config': }
   people::awaxa::linked_dotfile { '.irssi': }
+  people::awaxa::linked_dotfile { '.warprc': }
 }
