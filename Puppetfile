@@ -62,7 +62,7 @@ github "xquartz",     "1.2.1"
 # https://github.com/boxen.
 github "android",           "1.3.0"
 github "chrome",            "1.2.0"
-github "googledrive",       "1.0.2"
+github "dropbox",           "1.4.0"
 github "heroku",            "2.1.1"
 github "hipchat",           "1.1.3"
 github "iterm2",            "1.2.2"

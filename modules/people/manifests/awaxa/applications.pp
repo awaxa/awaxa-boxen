@@ -1,6 +1,7 @@
 class people::awaxa::applications {
 
   include chrome
+  include dropbox
   include foreman
   include gimp
   include googledrive

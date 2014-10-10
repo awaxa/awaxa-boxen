@@ -45,7 +45,7 @@ class people::awaxa::preferences {
     user   => $::boxen_user,
     key    => 'location',
     domain => 'com.apple.screencapture',
-    value  => "/Users/${::boxen_user}/Google Drive/Screenshots",
+    value  => "/Users/${::boxen_user}/Dropbox/Screenshots",
   }
 
 }
