@@ -66,6 +66,11 @@ class people::awaxa::base {
     source => 'puppet:///modules/people/battinfo.rb',
   }
 
+  file { "${boxen::config::srcdir}/awaxa-boxen":
+    ensure => link,
+    target => $boxen::config::repodir
+  }
+
   sudoers { $::boxen_user:
     ensure   => present,
     type     => 'user_spec',
