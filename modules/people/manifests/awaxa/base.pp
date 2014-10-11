@@ -48,6 +48,14 @@ class people::awaxa::base {
     require => Homebrew::Tap['peco/peco'],
   }
 
+  homebrew::tap { 'jlhonora/lsusb':
+    ensure => present,
+  }
+  package { 'lsusb':
+    ensure  => latest,
+    require => Homebrew::Tap['jlhonora/lsusb'],
+  }
+
   file { [
     '/usr/local',
     '/usr/local/bin',
