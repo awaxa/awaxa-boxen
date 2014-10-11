@@ -58,6 +58,14 @@ class people::awaxa::base {
     group  => 'admin',
   }
 
+  file { '/usr/local/bin/mute':
+    ensure => file,
+    mode   => '0755',
+    owner  => '0',
+    group  => '0',
+    source => 'puppet:///modules/people/mute',
+  }
+
   file { "${boxen::config::srcdir}/awaxa-boxen":
     ensure => link,
     target => $boxen::config::repodir

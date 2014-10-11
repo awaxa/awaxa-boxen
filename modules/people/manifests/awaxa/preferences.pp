@@ -48,4 +48,11 @@ class people::awaxa::preferences {
     value  => "/Users/${::boxen_user}/Dropbox/Screenshots",
   }
 
+  boxen::osx_defaults { 'Set Mute Volume LogoutHook':
+    ensure => present,
+    user   => 'root',
+    key    => 'LogoutHook',
+    domain => 'com.apple.loginwindow',
+    value  => '/usr/local/bin/mute',
+  }
 }
