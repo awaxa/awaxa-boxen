@@ -22,4 +22,5 @@ class people::awaxa::dotfiles {
   people::awaxa::linked_dotfile { '.irssi': }
   people::awaxa::linked_dotfile { '.warprc': }
   people::awaxa::linked_dotfile { 'bin': }
+  people::awaxa::linked_dotfile { '.weechat': }
 }
