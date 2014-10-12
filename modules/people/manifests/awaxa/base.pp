@@ -57,6 +57,13 @@ class people::awaxa::base {
     require => Homebrew::Tap['jlhonora/lsusb'],
   }
 
+  package { 'weechat':
+    ensure          => latest,
+    install_options => [
+      '--with-python',
+    ],
+  }
+
   file { [
     '/usr/local',
     '/usr/local/bin',
