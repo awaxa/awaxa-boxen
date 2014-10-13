@@ -61,6 +61,7 @@ class people::awaxa::base {
     ensure          => latest,
     install_options => [
       '--with-python',
+      '--with-ruby',
     ],
   }
 
