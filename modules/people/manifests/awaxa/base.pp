@@ -21,7 +21,7 @@ class people::awaxa::base {
     'tree',
     'vim',
     'watch',
-    ]:
+  ]:
     ensure => latest,
   }
 
@@ -33,7 +33,7 @@ class people::awaxa::base {
     'python3',
     'rdesktop',
     'wget',
-    ]:
+  ]:
     ensure => present,
   }
 
