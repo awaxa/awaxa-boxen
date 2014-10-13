@@ -57,12 +57,21 @@ class people::awaxa::base {
     require => Homebrew::Tap['jlhonora/lsusb'],
   }
 
+  package { 'aspell':
+    ensure          => latest,
+    install_options => [
+      '--with--lang-en',
+    ],
+  }
+
   package { 'weechat':
     ensure          => latest,
     install_options => [
+      '--with-aspell',
       '--with-python',
       '--with-ruby',
     ],
+    require => Package['aspell'],
   }
 
   file { [
