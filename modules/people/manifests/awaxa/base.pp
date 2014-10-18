@@ -6,6 +6,7 @@ class people::awaxa::base {
 
   package { [
     'apg',
+    'awscli',
     'bash',
     'bats',
     'bazaar',
@@ -14,26 +15,20 @@ class people::awaxa::base {
     'gist',
     'gnupg2',
     'htop-osx',
+    'irssi',
+    'mercurial',
+    'nmap',
     'pstree',
+    'python3',
+    'rdesktop',
     'reattach-to-user-namespace',
     'tmux',
     'tree',
     'vim',
     'watch',
-  ]:
-    ensure => latest,
-  }
-
-  package { [
-    'awscli',
-    'irssi',
-    'mercurial',
-    'nmap',
-    'python3',
-    'rdesktop',
     'wget',
   ]:
-    ensure => present,
+    ensure => latest,
   }
 
   homebrew::tap { 'homebrew/binary':
