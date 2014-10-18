@@ -1,7 +1,6 @@
 class people::awaxa::base {
 
   include java
-  include mongodb::package
   include python
   include python::virtualenvwrapper
   include zsh
