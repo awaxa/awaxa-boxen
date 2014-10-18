@@ -14,6 +14,7 @@ class people::awaxa::base {
     'dash',
     'dos2unix',
     'gist',
+    'gpg2',
     'htop-osx',
     'pstree',
     'reattach-to-user-namespace',
