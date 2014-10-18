@@ -13,6 +13,7 @@ class people::awaxa::applications {
   include iterm2::colors::solarized_light
   include iterm2::colors::zenburn
   include iterm2::stable
+  class { 'mailbox': version => '0.3.14' }
   include nimbus
   include onepassword
   include prince
