@@ -1,5 +1,8 @@
 class people::awaxa::vagrant {
-  include virtualbox
+  class { 'virtualbox':
+    version     => '4.3.18',
+    patch_level => '96516',
+  }
   include vmware_fusion
   class { '::vagrant': version => '1.6.5' }
 
