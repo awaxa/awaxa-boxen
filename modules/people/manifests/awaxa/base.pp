@@ -2,7 +2,6 @@ class people::awaxa::base {
 
   include java
   include python
-  include python::virtualenvwrapper
   include zsh
 
   package { [
