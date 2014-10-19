@@ -13,7 +13,7 @@ class people::awaxa::base {
     'dash',
     'dos2unix',
     'gist',
-    'gnupg2',
+    'gnupg',
     'htop-osx',
     'irssi',
     'mercurial',
