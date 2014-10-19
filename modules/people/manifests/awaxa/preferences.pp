@@ -1,7 +1,5 @@
 class people::awaxa::preferences {
 
-  include osx::global::disable_key_press_and_hold
-  include osx::global::disable_remote_control_ir_receiver
   include osx::global::enable_keyboard_control_access
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
@@ -9,14 +7,10 @@ class people::awaxa::preferences {
   include osx::global::tap_to_click
   class { 'osx::global::key_repeat_rate': rate => 2 }
   class { 'osx::global::key_repeat_delay': delay => 15 }
-  include osx::dock::2d
   include osx::dock::autohide
   include osx::dock::clear_dock
-  include osx::dock::dim_hidden_apps
   include osx::dock::disable
-  include osx::dock::hide_indicator_lights
   include osx::dock::icon_size
-  include osx::finder::show_hidden_files
   include osx::finder::enable_quicklook_text_selection
   include osx::finder::unhide_library
   class { 'osx::sound::interface_sound_effects': enable => false }
