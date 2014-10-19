@@ -23,4 +23,5 @@ class people::awaxa::dotfiles {
   people::awaxa::linked_dotfile { '.warprc': }
   people::awaxa::linked_dotfile { 'bin': }
   people::awaxa::linked_dotfile { '.weechat': }
+  people::awaxa::linked_dotfile { '.bundle': }
 }
