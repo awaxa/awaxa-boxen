@@ -6,6 +6,12 @@ class people::awaxa::android {
     ensure => latest,
   }
 
+  package { 'Java 6':
+    ensure   => present,
+    provider => 'pkgdmg',
+    source   => 'http://support.apple.com/downloads/DL1572/en_US/JavaForOSX2014-001.dmg',
+  }
+
   package { 'Android Studio':
     ensure   => present,
     provider => 'compressed_app',
