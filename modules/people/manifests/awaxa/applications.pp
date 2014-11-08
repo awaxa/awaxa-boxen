@@ -12,6 +12,7 @@ class people::awaxa::applications {
     'nimbus',
     'onepassword',
     'sizeup',
+    'spotify',
     'tunnelblick',
     'vlc',
   ]:
