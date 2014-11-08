@@ -5,6 +5,7 @@ class people::awaxa::applications {
   package { [
     'dropbox',
     'gimp',
+    'gitter',
     'google-chrome',
     'google-hangouts',
     'hipchat',
