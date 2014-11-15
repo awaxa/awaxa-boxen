@@ -2,6 +2,7 @@ class people::awaxa::base {
 
   include java
   include python
+  include redis
   include zsh
 
   package { [

@@ -109,6 +109,11 @@ GITHUBTARBALL
     python (2.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-redis
+  specs:
+    redis (3.1.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-repository
   specs:
     repository (2.3.0)
@@ -195,6 +200,7 @@ DEPENDENCIES
   prince (= 1.0.0)
   property_list_key (= 0.2.1)
   python (= 2.0.0)
+  redis (= 3.1.0)
   repository (= 2.3.0)
   ruby (= 8.1.4)
   stdlib (= 4.2.1)
