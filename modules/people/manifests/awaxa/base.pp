@@ -18,6 +18,7 @@ class people::awaxa::base {
     'htop-osx',
     'irssi',
     'mercurial',
+    'ngircd',
     'nmap',
     'pstree',
     'python3',
