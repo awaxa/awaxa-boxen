@@ -10,6 +10,7 @@ class people::awaxa::preferences {
   include osx::dock::autohide
   include osx::dock::clear_dock
   include osx::dock::disable
+  include osx::dock::disable_dashboard
   include osx::dock::icon_size
   include osx::finder::enable_quicklook_text_selection
   include osx::finder::unhide_library
@@ -19,19 +20,11 @@ class people::awaxa::preferences {
   include osx::software_update
   include osx::keyboard::capslock_to_control
   include osx::universal_access::ctrl_mod_zoom
-
+  include osx::safari::enable_developer_mode
 
   class { 'osx::dock::hot_corners':
     bottom_right => 'Start Screen Saver',
     bottom_left  => 'Start Screen Saver',
-  }
-
-  boxen::osx_defaults { 'Disable Dashboard':
-    ensure => present,
-    user   => $::boxen_user,
-    key    => 'mcx-disabled',
-    domain => 'com.apple.dashboard',
-    value  => '1',
   }
 
   boxen::osx_defaults { 'Set Screenshot Directory':
