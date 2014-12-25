@@ -1,9 +1,17 @@
 class people::awaxa::vagrant {
   class { 'virtualbox':
-    version     => '4.3.18',
-    patch_level => '96516',
+    version     => '4.3.20',
+    patch_level => '96996',
   }
-  class { '::vagrant': version => '1.6.5' }
+  class { '::vagrant': version => '1.7.1' }
+  package { 'vmware-fusion':
+    ensure   => present,
+    provider => 'brewcask',
+  }
+  file { '/Applications/VMware Fusion.app':
+    ensure => link,
+    target => "/Users/${::boxen_user}/Applications/VMware Fusion.app",
+  }
 
   people::awaxa::linked_dotfile { '.vagrant.d/Vagrantfile': }
 
