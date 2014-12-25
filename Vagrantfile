@@ -12,7 +12,11 @@ script/boxen --no-fde
 BOOTSTRAP
 
 Vagrant.configure('2') do |config|
-  config.vm.define 'mavericks' do |mavericks|
+  config.ssh.insert_key = false
+  config.vm.define 'yosemite' do |yosemite|
+    yosemite.vm.box = 'yosemite'
+  end
+  config.vm.define 'mavericks', autostart: false do |mavericks|
     mavericks.vm.box = 'mavericks'
   end
   config.vm.define 'mountainlion', autostart: false do |mountainlion|
