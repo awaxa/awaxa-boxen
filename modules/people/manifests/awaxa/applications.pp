@@ -11,6 +11,7 @@ class people::awaxa::applications {
     'gitter',
     'google-chrome',
     'google-hangouts',
+    'gopro-studio',
     'hipchat',
     'mailbox',
     'nimbus',

@@ -13,6 +13,7 @@ class people::awaxa::base {
     'bazaar',
     'dash',
     'dos2unix',
+    'ffmpeg',
     'gist',
     'gnupg',
     'htop-osx',
