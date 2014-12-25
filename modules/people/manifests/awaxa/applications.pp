@@ -1,6 +1,9 @@
 class people::awaxa::applications {
 
   include brewcask
+  Package <| title == 'brew-cask' |> {
+    ensure => latest,
+  }
 
   package { [
     'dropbox',
