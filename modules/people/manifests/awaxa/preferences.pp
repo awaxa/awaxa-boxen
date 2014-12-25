@@ -1,5 +1,13 @@
 class people::awaxa::preferences {
 
+  $phone = base64(decode,'KzE3MDMyMTc1MTc4')
+  $email = 'greg.kitson@gmail.com'
+  $personal = [ ]
+  unless $::sp_serial_number in $personal {
+    $_more = ",\n or +18775759775/help@puppetlabs.com"
+  }
+  osx::recovery_message { "If found, please contact ${phone}/${email}${_more}": }
+
   include osx::global::enable_keyboard_control_access
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
