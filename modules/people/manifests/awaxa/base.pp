@@ -25,6 +25,7 @@ class people::awaxa::base {
     'python3',
     'rdesktop',
     'reattach-to-user-namespace',
+    'rtorrent',
     'tmux',
     'tree',
     'vim',

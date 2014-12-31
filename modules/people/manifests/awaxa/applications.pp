@@ -16,8 +16,10 @@ class people::awaxa::applications {
     'mailbox',
     'nimbus',
     'onepassword',
+    'sabnzbd',
     'sizeup',
     'spotify',
+    'transmission',
     'tunnelblick',
     'vlc',
   ]:
