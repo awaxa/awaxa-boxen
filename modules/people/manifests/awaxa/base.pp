@@ -26,6 +26,7 @@ class people::awaxa::base {
     'rdesktop',
     'reattach-to-user-namespace',
     'rtorrent',
+    'sickbeard',
     'tmux',
     'tree',
     'vim',
