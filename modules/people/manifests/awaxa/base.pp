@@ -40,6 +40,14 @@ class people::awaxa::base {
     ensure => present,
   }
 
+  homebrew::tap { 'nviennot/tmate':
+    ensure => present,
+  }
+  package { 'tmate':
+    ensure  => latest,
+    require => Homebrew::Tap['nviennot/tmate'],
+  }
+
   homebrew::tap { 'peco/peco':
     ensure => present,
   }
