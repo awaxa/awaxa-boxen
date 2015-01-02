@@ -60,7 +60,7 @@ github "xquartz",     "1.2.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 github "android",           "1.3.0"
-github "brewcask",          "0.0.4", :repo => "phinze/puppet-brewcask"
+github "brewcask",          "0.0.5"
 github "heroku",            "2.1.1"
 github "iterm2",            "1.2.2"
 github "java",              "1.7.1"

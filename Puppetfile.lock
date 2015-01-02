@@ -19,6 +19,11 @@ GITHUBTARBALL
     boxen (3.7.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-brewcask
+  specs:
+    brewcask (0.0.5)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (2.0.1)
@@ -149,11 +154,6 @@ GITHUBTARBALL
     property_list_key (0.2.1)
 
 GITHUBTARBALL
-  remote: phinze/puppet-brewcask
-  specs:
-    brewcask (0.0.4)
-
-GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.1.1)
@@ -171,7 +171,7 @@ GITHUBTARBALL
 DEPENDENCIES
   android (= 1.3.0)
   boxen (= 3.7.0)
-  brewcask (= 0.0.4)
+  brewcask (= 0.0.5)
   dnsmasq (= 2.0.1)
   foreman (= 1.2.0)
   gcc (= 2.2.0)
