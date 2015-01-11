@@ -3,7 +3,7 @@ class people::awaxa::vagrant {
     version     => '4.3.20',
     patch_level => '96996',
   }
-  class { '::vagrant': version => '1.7.1' }
+  class { '::vagrant': version => '1.7.2' }
   package { 'vmware-fusion':
     ensure   => present,
     provider => 'brewcask',
