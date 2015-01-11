@@ -7,6 +7,7 @@ class people::awaxa::applications {
 
   package { [
     'dropbox',
+    'evernote',
     'gimp',
     'gitter',
     'google-chrome',
