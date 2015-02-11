@@ -42,10 +42,4 @@ class people::awaxa::applications {
     manage_font_library_dir => true,
   }
 
-  repository { "${::boxen_srcdir}/tugboat":
-    ensure => present,
-    source => 'pearkes/tugboat',
-  }
-  people::awaxa::binstub { 'tugboat': }
-
 }
