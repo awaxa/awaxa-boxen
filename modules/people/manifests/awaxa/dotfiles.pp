@@ -3,9 +3,11 @@ class people::awaxa::dotfiles {
     ensure => present,
     source => "${::github_login}/dotfiles",
   }
-  repository { "/Users/${::boxen_user}/.oh-my-zsh":
-    ensure => 'master',
-    source => 'robbyrussell/oh-my-zsh',
+  vcsrepo { "/Users/${::boxen_user}/.oh-my-zsh":
+    ensure   => latest,
+    provider => 'git',
+    revision => 'master',
+    source   => 'https://github.com/robbyrussell/oh-my-zsh.git',
   }
   people::awaxa::linked_dotfile { '.vimrc': }
   people::awaxa::linked_dotfile { '.tmux.conf': }

@@ -71,5 +71,6 @@ github "property_list_key", "0.2.1", :repo => "glarizza/puppet-property_list_key
 github "python",            "2.0.0"
 github "redis",             "3.1.0"
 github "vagrant",           "3.2.1"
+github "vcsrepo",           "1.2.0", :repo => "puppetlabs/puppetlabs-vcsrepo"
 github "virtualbox",        "1.0.13"
 github "zsh",               "1.0.0"

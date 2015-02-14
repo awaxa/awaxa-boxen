@@ -164,6 +164,11 @@ GITHUBTARBALL
     stdlib (4.2.1)
 
 GITHUBTARBALL
+  remote: puppetlabs/puppetlabs-vcsrepo
+  specs:
+    vcsrepo (1.2.0)
+
+GITHUBTARBALL
   remote: ripienaar/puppet-module-data
   specs:
     module_data (0.0.3)
@@ -200,6 +205,7 @@ DEPENDENCIES
   stdlib (= 4.2.1)
   sudo (= 1.0.0)
   vagrant (= 3.2.1)
+  vcsrepo (= 1.2.0)
   virtualbox (= 1.0.13)
   xquartz (= 1.2.1)
   zsh (= 1.0.0)
