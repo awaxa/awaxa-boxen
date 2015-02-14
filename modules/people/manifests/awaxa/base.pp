@@ -24,6 +24,7 @@ class people::awaxa::base {
     'mercurial',
     'ngircd',
     'nmap',
+    'peco',
     'pstree',
     'python3',
     'rdesktop',
@@ -49,14 +50,6 @@ class people::awaxa::base {
   package { 'tmate':
     ensure  => latest,
     require => Homebrew::Tap['nviennot/tmate'],
-  }
-
-  homebrew::tap { 'peco/peco':
-    ensure => present,
-  }
-  package { 'peco':
-    ensure  => latest,
-    require => Homebrew::Tap['peco/peco'],
   }
 
   homebrew::tap { 'jlhonora/lsusb':
