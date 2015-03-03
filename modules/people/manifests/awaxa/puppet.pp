@@ -13,6 +13,6 @@ class people::awaxa::puppet {
   }
   repository { "${::boxen_srcdir}/r10k":
     ensure => present,
-    source => 'adrienthebo/r10k',
+    source => 'puppetlabs/r10k',
   }
 }
