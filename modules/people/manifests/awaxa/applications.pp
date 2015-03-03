@@ -19,6 +19,7 @@ class people::awaxa::applications {
     'onepassword',
     'sabnzbd',
     'sizeup',
+    'sourcetree',
     'spotify',
     'transmission',
     'tunnelblick',
