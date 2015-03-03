@@ -15,4 +15,14 @@ class people::awaxa::puppet {
     ensure => present,
     source => 'puppetlabs/r10k',
   }
+
+  $confdir = "/Users/${::boxen_user}/.puppet" # $settings::confdir
+  ini_setting { "${confdir}/puppet.conf main:graph=true":
+    ensure  => present,
+    path    => "${confdir}/puppet.conf",
+    section => 'main',
+    setting => 'graph',
+    value   => 'true',
+  }
+
 }
