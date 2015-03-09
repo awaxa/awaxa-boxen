@@ -17,6 +17,12 @@ class people::awaxa::puppet {
   }
 
   $confdir = "/Users/${::boxen_user}/.puppet" # $settings::confdir
+  file { $confdir:
+    ensure => directory,
+  }
+  file { "${confdir}/puppet.conf":
+    ensure => file,
+  }
   ini_setting { "${confdir}/puppet.conf main:graph=true":
     ensure  => present,
     path    => "${confdir}/puppet.conf",
